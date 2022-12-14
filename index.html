@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cat Cafe</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- NAV -->
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="btn-scroll btn-scroll--about">
+            <a class="nav-link">About us</a>
+          </li>
+          <li class="btn-scroll btn-scroll--adoption">
+            <a class="nav-link">Adoption</a>
+          </li>
+          <li class="btn-scroll btn-scroll--meet">
+            <a class="nav-link">Meet our cats</a>
+          </li>
+          <li><a class="btn--show-modal" href="">Book now</a></li>
+        </ul>
+      </nav>
+      <div class="heading">
+        <h1>Cat cafe</h1>
+        <h2>Enjoy the best possible nonesuch company!</h2>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider">
+        <div class="slide"><img src="img/img-1r.jpg" alt="img" /></div>
+        <div class="slide"><img src="img/img-2r.jpg" alt="img" /></div>
+        <div class="slide"><img src="img/img-4r.jpg" alt="img" /></div>
+        <button class="slider__btn slider__btn--left">⪪</button>
+        <button class="slider__btn slider__btn--right">⪫</button>
+        <div class="dots"></div>
+      </div>
+
+      <!-- MODAL -->
+      <ul></ul>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">✕</button>
+        <h2 class="modal-heading">Reservation Form</h2>
+        <form class="form" action="#" method="get">
+          <label for="first-name">Name</label>
+          <input
+            class="input-field"
+            type="text"
+            name="first-name"
+            id="first-name"
+          />
+          <label for="email">Email</label>
+          <input class="input-field" type="email" name="email" id="email" />
+          <label for="tel">Phone</label>
+          <input class="input-field" type="tel" name="tel" id="tel" />
+          <label for="date">Reservation Date</label>
+          <input class="input-field" type="date" name="date" id="date" />
+          <label for="date">Reservation Time</label>
+          <input class="input-field" type="time" name="time" id="time" />
+          <label for="persons">How many person will you be with?</label>
+          <input
+            class="input-field"
+            type="number"
+            name="persons"
+            id="persons"
+          />
+          <label for="notes">Notes</label>
+          <textarea
+            class="input-field"
+            name="notes"
+            id="notes"
+            cols="20"
+            rows="5"
+          ></textarea>
+        </form>
+      </div>
+    </header>
+
+    <section class="section section--about">
+      <h2 id="about-us">About us</h2>
+      <h3>How we started?</h3>
+      <p>
+        The cafe opened in May 2020. Since then, we have welcomed an average of
+        over 35,000 visitors during a normal year. Cat Cafe is primarily
+        volunteer-run, who oversee the business affairs, cat care and daily
+        operations.
+      </p>
+      <p>
+        We also operate as a resource center for animal rescuers, providing
+        educational workshops and holding space for newly-rescued cats and we
+        began conducting services in December 2021.
+      </p>
+
+      <h3>Our mission expands</h3>
+      <p>
+        During the COVID pandemic, we turned our attention to growing our foster
+        program. We now house around 200 cats in foster homes at any given time,
+        massively increasing our life-saving capacity through the generosity of
+        our community of cat lovers.
+      </p>
+      <p>
+        In 2021, we began a low-cost medical clinic, providing vaccinations,
+        exams, and other services to recent rescues. In 2021 our spay/neuter
+        clinic started offering low-cost options to rescuers and low-income
+        community members.
+      </p>
+      <img
+        class="img lazy-img"
+        src="img/img-3r.jpg"
+        data-src="img/img-5.jpg"
+        alt="A man strokes a cat in the Cat cafe,"
+      />
+
+      <h3>Expanding outreach out for evolving needs</h3>
+      <p>
+        As our focus broadens to provide more access to low-cost veterinary care
+        for both rescuers and low-income pet owners, we’re able to help even
+        more animals stay with their loving families, on their journey to
+        adoptive homes, or continue their lives as healthier, happier community
+        cats.
+      </p>
+
+      <h3>Our reach</h3>
+      <p>
+        Since 2020, we have rescued over 700 cats and more than 100 other
+        animals including dogs, guinea pigs, rats, rabbits, mice and a chicken.
+        Over 400 cats have been placed in permanent adoptive homes.
+      </p>
+
+      <h3>Adopting a hypoallergenic cat</h3>
+      <p>
+        Some cats may affect you differently than others, but it’s unlikely that
+        it has to do with the fur color or type of coat. There are things you
+        can do to minimize your reaction, like using cat wipes to reduce dander
+        or not letting the cat on the bed.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="section section--adoption">
+      <h2 id="adoption">Adoption</h2>
+      <div class="adoption">
+        <div>
+          <h3 class="esa-heading">Adopting a cat as an ESA</h3>
+          <p>
+            Animals can provide incredible emotional support, however, we ask
+            you to deeply consider all the reasons that you want to adopt a cat.
+            While the act of caring for another living being can be healing, it
+            can also produce its own anxieties.
+          </p>
+          <h3>Adopting young kittens</h3>
+          <p>
+            Young kittens still need several vet visits and adoptions are not
+            considered final until they complete vaccinations and are
+            spayed/neutered.
+          </p>
+          <h3>Adopting with a roommate</h3>
+          <p>
+            Please make sure that you are fully prepared for all of the
+            responsibilities involved in pet ownership before applying. Consult
+            a professional and consider fostering first to make sure caretaking
+            is a helpful part of your healthy lifestyle.
+          </p>
+        </div>
+
+        <img
+          class="img lazy-img"
+          src="img/img-3.jpg"
+          data-src="img/img-3.jpg"
+          alt="A plant"
+        />
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- TABBED COMPONENT -->
+    <h2 class="meet-heading">Meet our Cats!</h2>
+    <div class="tab-component meet-cats">
+      <div class="tab-container">
+        <button class="tab tab-1 tab-active" data-tab="1">
+          Adoption rules
+        </button>
+        <button class="tab tab-2" data-tab="2">Private Events</button>
+        <button class="tab tab-3" data-tab="3">FAQ</button>
+      </div>
+
+      <div class="content content-1 content-active">
+        <h2>Adopting a cat</h2>
+        <p>
+          All of our cats besides our mascot, Newt, are available for adoption.
+          Read more about our adoption process here. Please keep in mind that we
+          do not do same day adoptions. The rats, guinea pigs, rabbits and
+          gerbil are also adoptable.
+        </p>
+      </div>
+      <div class="content content-2">
+        <h2>Enjoy our unique space for your private event</h2>
+        <p>
+          Cat Cafe offers space (and cats) for your private events — bring your
+          family and friends for an exclusive hour with the cats.
+        </p>
+        <p>Add on party options include:</p>
+        <ul>
+          <li>Kitten party with out tiniest residents</li>
+          <li>Party favor bags with cat themed items</li>
+          <li>Cat ear headbands</li>
+        </ul>
+        <p>
+          We ask that you have one adult for every four children in your party.
+        </p>
+        <p>We have standing availability weekend mornings from 11am-12pm.</p>
+        <p>For bespoke events, pmeet us at events@catcafe.com</p>
+      </div>
+
+      <div class="content content-3">
+        <h3>What is the Cat Cafe?</h3>
+        <p>
+          We are a non-profit animal rescue working to reduce animal
+          homelessness through adoption, education, and outreach run by the
+          animal rescue group.
+        </p>
+        <h3>Do you serve food and drinks?</h3>
+        <p>
+          We don’t have any human snacks at this time, but we make up for that
+          with treats for the cats.
+        </p>
+        <h3>Cab I foster cats from the Cafe?</h3>
+        <p>
+          The cats at the cafe are not available for fostering as cafe residents
+          have already graduated from our foster program. We do, however, have
+          many other lovely cats and kittens looking for temporary homes.
+        </p>
+        <p>
+          We are always happy to expand our foster network – please submit an
+          application to get started. Learn more about our foster program here.
+        </p>
+        <h3>Cab I foster cats from the Cafe?</h3>
+        <p>
+          The cats at the cafe are not available for fostering as cafe residents
+          have already graduated from our foster program. We do, however, have
+          many other lovely cats and kittens looking for temporary homes.
+        </p>
+        <p>
+          We are always happy to expand our foster network – please submit an
+          application to get started. Learn more about our foster program here.
+        </p>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; 2022 Copyright by
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://github.com/Vladyslav8919"
+          >Vladyslav Pshevlotskyi</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
